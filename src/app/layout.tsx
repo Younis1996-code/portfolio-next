@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Comfortaa, Nunito, Dancing_Script } from "next/font/google";
+import { Comfortaa, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 
-const Dancing_Script_Font = Dancing_Script({
-  variable: "--font-dancing-script",
-  subsets: ["latin"],
-});
+// const Dancing_Script_Font = Dancing_Script({
+//   variable: "--font-dancing-script",
+//   subsets: ["latin"],
+// });
 const ComfortaaFont = Comfortaa({
   variable: "--font-comfortaa",
   subsets: ["latin"],
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${NunitoFont.variable} ${ComfortaaFont.variable} ${Dancing_Script_Font.variable} antialiased bg-Grey-08 text-White font-nunito overflow-x-hidden`}
+        className={`${NunitoFont.variable} ${ComfortaaFont.variable} antialiased bg-Grey-08 text-White font-nunito overflow-x-hidden`}
       >
         <Providers>
           <Navbar />

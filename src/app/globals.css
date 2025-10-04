@@ -5,14 +5,14 @@
     /* Absolute Colors */
     --color-White: #ffffff;
     /* Purple Shades */
-    --color-Purple-60: #703bf7;
+    /* --color-Purple-60: #703bf7;
     --color-Purple-65: #8254f8;
     --color-Purple-70: #946cf9;
     --color-Purple-75: #a685fa;
     --color-Purple-90: #dbcefd;
     --color-Purple-95: #ede7fe;
     --color-Purple-97: #f4f0fe;
-    --color-Purple-99: #fcfcfd;
+    --color-Purple-99: #fcfcfd; */
     /* green Shades  */
     --color-Green-60: #013220;
     --color-Green-65: #014421;
@@ -66,7 +66,7 @@
     /* Was #262626 */
     --color-Grey-20: #dbcefd;
     /* Was #333333 */
-    --color-Grey-30: #cccccc;
+    --color-Grey-30: #999898;
     /* Was #4D4D4D */
     --color-Grey-40: #a685fa;
     /* Was #666666 */

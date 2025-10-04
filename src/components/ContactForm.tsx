@@ -1,7 +1,5 @@
 'use client';
 
-// Make sure to run npm install @formspree/react
-// For more help visit https://formspr.ee/react-help
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -9,11 +7,19 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("mvgwklgd");
 
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <section
+        aria-live="polite"
+        className="text-center py-10 text-Green-75 text-xl md:text-2xl lg:text-3xl font-semibold"
+      >
+        Thank you! Your message has been sent successfully.
+      </section>
+    );
   }
 
   return (
-    <form className="grid gap-y-6 lg:gap-y-10 w-full lg:w-1/2 mx-auto my-8 lg:my-auto" onSubmit={handleSubmit}>
+    <section className="w-full lg:w-1/2 mx-auto my-8 lg:my-auto" aria-label="Contact Form">
+    <form className="grid gap-y-6 lg:gap-y-10" onSubmit={handleSubmit}>
       <div className="flex flex-col gap-y-2">
         <label
           className="text-[4.10256vw]/[150%] md:text-[3.10256vw]/[150%] lg:text-[1.3888vw]/[150%] xl:text-[1.25vw]/[150%]"
@@ -39,7 +45,7 @@ export default function ContactForm() {
         <input
           className="appearance-none rounded-md border-0 p-4 lg:p-5 outline-none ring-1 ring-inset ring-[--color-border-default] placeholder:text-[--color-text-muted] focus-visible:ring-Green-65 bg-Grey-10 text-[3.5897vw]/[150%] md:text-[2.0806vw]/[150%] lg:text-[1.25vw]/[150%] xl:text-[1.04167vw]/[150%]"
           id="email"
-          placeholder="TlQ7S@example.com"
+          placeholder="you@example.com"
           name="email"
           required
         />
@@ -48,9 +54,6 @@ export default function ContactForm() {
         field="email"
         errors={state.errors}
       />
-        {/* <p className="block leading-5 text-[--color-text-muted]">
-          This will help me respond to your query via an email.
-        </p> */}
       </div>
       <div className="flex flex-col gap-y-2">
         <label
@@ -66,9 +69,6 @@ export default function ContactForm() {
           name="message"
           required
         />
-        {/* <p className="block leading-5 text-[--color-text-muted]">
-          What would you like to discuss?
-        </p> */}
       </div>
       <div className="flex flex-row-reverse gap-x-6">
         <button
@@ -81,9 +81,6 @@ export default function ContactForm() {
         
       </div>
     </form>
+    </section>
   );
 }
-
-
-
-// text-[3.5897vw]/[150%] md:text-[2.0806vw]/[150%] lg:text-[1.25vw]/[150%] xl:text-[1.04167vw]/[150%]

@@ -3,7 +3,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col gap-2 lg:gap-4 text-center lg:text-left my-auto">
+    <section aria-label="Introduction" className="flex flex-col gap-2 lg:gap-4 text-center lg:text-left my-auto">
       <h2 className="text-[7.6923vw] md:text-[6.5vw] lg:text-[3.334vw] xl:text-[3.125vw] font-bold font-comfortaa">
         Hello<span className="text-Green-75 ml-1">.</span>
       </h2>
@@ -22,10 +22,11 @@ const Intro = () => {
           value="My Projects"
           link="/projects"
           heroBut
+          aria-label="View my projects"
         />
-        <Button value="My Resume" link="" heroBut />
+        <Button value="My Resume" link="" heroBut aria-label="Download my resume" />
       </div>
-    </div>
+    </section>
   );
 };
 

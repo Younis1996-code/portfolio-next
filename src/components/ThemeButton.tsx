@@ -19,12 +19,13 @@ export default function ThemeToggleButton() {
   // Show moon in dark mode, sun in light mode
   useEffect(() => {
     if ( !lottieRef.current || isAnimating) return;
+    lottieRef.current.setSpeed(1.5);
     // setMounted(true)
     const currentTheme = theme ?? resolvedTheme;
     if (currentTheme === "dark") {
       lottieRef.current.goToAndStop(0, true); // Moon for dark
     } else if (currentTheme === "light") {
-      lottieRef.current.goToAndStop(100, true); // Sun for light
+      lottieRef.current.goToAndStop(250, true); // Sun for light
     }
   }, [theme, resolvedTheme, isAnimating]);
 
@@ -33,10 +34,10 @@ export default function ThemeToggleButton() {
     setIsAnimating(true);
     const currentTheme = theme ?? resolvedTheme;
     if (currentTheme === "dark") {
-      lottieRef.current.playSegments([0, 100], true); // Moon to Sun
+      lottieRef.current.playSegments([0, 200], true); // Moon to Sun
       setPendingTheme("light");
     } else if (currentTheme === "light") {
-      lottieRef.current.playSegments([100, 0], true); // Sun to Moon
+      lottieRef.current.playSegments([200, 0], true); // Sun to Moon
       setPendingTheme("dark");
     }
   };
@@ -57,7 +58,7 @@ export default function ThemeToggleButton() {
       onClick={handleToggle}
       aria-label="Toggle Theme"
       type="button"
-      tabIndex={0}
+      // tabIndex={0}
     >
       <Lottie
         animationData={darkModeButtonAnim}
@@ -65,7 +66,8 @@ export default function ThemeToggleButton() {
         lottieRef={lottieRef}
         autoplay={false}
         onComplete={handleComplete}
-        style={{ pointerEvents: "none" }}
+        className="cursor-pointer"
+        // style={{ pointerEvents: "none"}}
       />
     </button>
   );

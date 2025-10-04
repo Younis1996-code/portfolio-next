@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <Container className='pt-18 md:pt-[77px] xl:pt-[99px] h-screen flex flex-col items-center justify-center' >
+    <Container className='pt-18 md:pt-[77px] xl:pt-[99px] h-screen flex flex-col items-center justify-center overflow-x-hidden' >
       <ContactForm />
     </Container>
   )

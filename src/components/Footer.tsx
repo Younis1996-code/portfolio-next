@@ -34,7 +34,7 @@ const footerSocialLinks: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <footer className="w-full py-6 flex justify-center items-center bg-transparent">
+    <footer className="w-full flex justify-center items-center bg-transparent mt-25 lg:mt-40 mb-6 lg:mb-8">
       <nav aria-label="Social media links">
         <ul className="flex gap-6 border-t border-Grey-20 pt-6 lg:pt-8">
           {footerSocialLinks.map((link) => (
