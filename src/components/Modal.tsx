@@ -1,4 +1,3 @@
-// components/Modal.tsx
 import Image from "next/image";
 import React, { useEffect, useRef, useState, useId } from "react";
 
@@ -128,3 +127,79 @@ const Modal: React.FC<ModalProps> = ({ setOpenModal, src, alt }) => {
 };
 
 export default Modal;
+
+
+// import Image from "next/image";
+// import React, { useEffect } from "react";
+
+// interface ModalProps {
+//   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+//   // children: React.ReactNode;
+//   src: string;
+//   alt: string;
+//   openModal: boolean;
+// }
+
+// const Modal: React.FC<ModalProps> = ({ setOpenModal, src, alt, openModal }) => {
+//   useEffect(() => {
+//     // Disable background scroll
+//     document.body.style.overflow = "hidden";
+
+//     // Close on Escape key
+//     const handleEscape = (e: KeyboardEvent) => {
+//       if (e.key === "Escape") setOpenModal(false);
+//     };
+//     document.addEventListener("keydown", handleEscape);
+
+//     return () => {
+//       document.body.style.overflow = "auto";
+//       document.removeEventListener("keydown", handleEscape);
+//     };
+//   }, [setOpenModal]);
+
+//   return (
+//     <div
+//       className={`fixed inset-0 z-[10000] flex items-center justify-center bg-black/90 
+//         transition-opacity duration-500 ease-in-out 
+//         ${openModal ? "opacity-100 visible" : "opacity-0 invisible"}`}
+//       role="dialog"
+//       aria-modal="true"
+//       aria-label={`Image preview: ${alt}`}
+//       onClick={() => setOpenModal(false)}
+//     >
+//       {/* Close Button */}
+//       <button
+//         type="button"
+//         aria-label="Close modal"
+//         className="absolute top-4 right-4 md:top-8 md:right-8 text-Green-75 text-2xl md:text-3xl lg:text-4xl font-bold 
+//                    border-2 border-white rounded-full w-10 h-10 flex items-center justify-center 
+//                    hover:bg-Green-75 hover:text-white transition-colors"
+//         onClick={(e) => {
+//           e.stopPropagation();
+//           setOpenModal(false);
+//         }}
+//       >
+//         ×
+//       </button>
+
+//       {/* Animated content */}
+//       <div
+//         className={`relative w-[90vw] h-[60vh] md:w-[80vw] md:h-[60vh] lg:w-[70vw] lg:h-[70vh] xl:w-[60vw] xl:h-[70vh] 
+//                     rounded-lg overflow-hidden shadow-xl bg-black
+//                     transform transition-all duration-500 ease-in-out
+//                     ${openModal ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}
+//         onClick={(e) => e.stopPropagation()}
+//       >
+//         <Image
+//           src={src}
+//           alt={alt}
+//           fill
+//           className="object-contain"
+//           priority
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Modal;

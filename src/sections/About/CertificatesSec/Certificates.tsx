@@ -38,9 +38,6 @@ const Certificates = () => {
     <Container className="w-full text-center flex flex-col gap-16 md:gap-20 xl:gap-25">
       <SecTitle value="Certificates" withLine />
       <div
-        data-aos="zoom-in"
-        data-aos-delay="200"
-         aos-duration="800"
         className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 w-[90%] mx-auto bg-Grey-10/80 border border-Grey-20 shadow-lg p-4 md:p-6 lg:p-8 rounded-md lg:rounded-lg xl:rounded-xl"
       >
         {certificates.map((cert, index) => (

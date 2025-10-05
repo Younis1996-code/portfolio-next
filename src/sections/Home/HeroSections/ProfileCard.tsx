@@ -6,9 +6,6 @@ import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 const ProfileCard = () => {
   return (
     <figure
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-duration="400"
       className="relative w-full lg:w-1/2 h-[85vw] md:h-[91.79487vw] lg:h-[38vw] overflow-hidden"
     >
       <FaLessThan

@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
-import AOSProvider from "@/components/AosProvider";
 
 const ComfortaaFont = Comfortaa({
   variable: "--font-comfortaa",
@@ -32,7 +31,7 @@ export default function RootLayout({
       >
         <Providers>
           <Navbar />
-          <AOSProvider>{children}</AOSProvider>
+          {children}
           <Footer />
         </Providers>
       </body>

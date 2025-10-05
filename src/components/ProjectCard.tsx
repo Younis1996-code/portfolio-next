@@ -16,10 +16,7 @@ const ProjectCard = ({
 }) => {
   return (
     <article
-      data-aos="zoom-in"
-      data-aos-delay="200"
-      aos-duration="800"
-      className={`flex flex-col-reverse gap-4 md:gap-6 lg:gap-0 items-center lg:items-start justify-between rounded-md lg:rounded-lg xl:rounded-xl bg-Grey-10/80 border border-Grey-20 shadow-lg w-full overflow-hidden ${
+      className={`flex flex-col-reverse gap-4 md:gap-6 lg:gap-0 items-center lg:items-start justify-between rounded-md lg:rounded-lg xl:rounded-xl bg-Grey-10/80 border border-Grey-20 shadow-lg w-full ${
         top3
           ? index === 1
             ? "lg:flex-row-reverse"

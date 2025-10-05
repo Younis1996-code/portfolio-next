@@ -28,10 +28,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
   return (
     <>
       <figure
-        data-aos="zoom-out"
-        data-aos-delay="300"
-        aos-duration="1000"
-        className={`relative w-full h-[55vw] md:h-[52vw] cursor-pointer ${
+        className={`relative w-full h-[55vw] md:h-[52vw] cursor-pointer overflow-hidden ${
           top3 ? "lg:flex-1 lg:h-[23vw] xl:h-[22vw]" : "lg:h-[25vw] xl:h-[24vw]"
         }`}
         onMouseEnter={() => setShowModal(!!certificate)}

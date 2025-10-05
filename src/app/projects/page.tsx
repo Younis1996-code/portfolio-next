@@ -7,6 +7,27 @@ import { ProjectsData } from "@/data/ProjectsData";
 import React, { useMemo, useState } from "react";
 import { LuSearchCode } from "react-icons/lu";
 
+export const metadata = {
+  title: "Younis Issa | Projects",
+  description: "Explore the projects and web applications built by Younis Issa using React, Next.js, and modern web technologies.",
+  keywords: "Younis Issa, projects, portfolio, web development, React, Next.js, frontend projects",
+  url: "https://portfolio-self-ten-96.vercel.app/projects",
+  siteName: "Younis Issa Portfolio",
+  openGraph: {
+    title: "Younis Issa | Projects",
+    description: "Explore the projects and web applications built by Younis Issa using React, Next.js, and modern web technologies.",
+    url: "https://portfolio-self-ten-96.vercel.app/projects",
+    siteName: "Younis Issa Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Younis Issa | Projects",
+    description: "Explore the projects and web applications built by Younis Issa using React, Next.js, and modern web technologies.",
+  },
+};
+
+
 const Projects = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
