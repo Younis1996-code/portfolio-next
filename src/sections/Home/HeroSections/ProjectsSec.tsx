@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/Cards/ProjectCard";
 import SecTitle from "@/components/SecTitle";
 import { Project, ProjectsData } from "@/data/ProjectsData";
 import React from "react";

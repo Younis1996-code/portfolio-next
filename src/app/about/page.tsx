@@ -1,7 +1,5 @@
-"use client";
-
 import Container from "@/components/Container";
-import Skills from "@/components/Skills";
+import Skills from "@/sections/Skills";
 import Certificates from "@/sections/About/CertificatesSec/Certificates";
 import AboutCon from "@/sections/About/hero/AboutCon";
 import AboutProfile from "@/sections/About/hero/AboutProfile";

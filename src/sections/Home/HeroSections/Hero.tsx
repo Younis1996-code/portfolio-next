@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import ProfileCard from "@/sections/Home/HeroSections/ProfileCard";
-import Skills from "@/components/Skills";
+import Skills from "@/sections/Skills";
 import React from "react";
 import Intro from "./Intro";
 

@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import ImageCard from "@/components/ImageCard";
+import ImageCard from "@/components/Cards/ImageCard";
 import ImageModal from "@/components/ImageModal";
 import SecTitle from "@/components/SecTitle";
 import React from "react";

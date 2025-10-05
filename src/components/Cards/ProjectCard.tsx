@@ -1,9 +1,8 @@
-import React from "react";
-import Button from "./Button";
 import { Project } from "@/data/ProjectsData";
+import Button from "../Button";
+import ProjectsCats from "../ProjectsCats";
+import ImageModal from "../ImageModal";
 import ImageCard from "./ImageCard";
-import ImageModal from "./ImageModal";
-import ProjectsCats from "./ProjectsCats";
 
 const ProjectCard = ({
   project,
