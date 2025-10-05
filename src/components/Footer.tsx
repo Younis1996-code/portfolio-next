@@ -58,7 +58,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-
-
-// className="w-18 h-18 md:w-20 md:h-20 lg:w-21 lg:h-21 xl:w-25 xl:h-25"

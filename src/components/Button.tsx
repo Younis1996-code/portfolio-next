@@ -1,19 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
-const Button = ({
-  className,
-  link,
-  value,
-  prim,
-  heroBut,
-}: {
+interface ButtonProps {
   className?: string;
   link: string;
   value: string;
   prim?: boolean;
   heroBut?: boolean;
-}) => {
+}
+
+const Button = ({ className, link, value, prim, heroBut }: ButtonProps) => {
   return (
     <button
       className={`rounded-md md:rounded-lg cursor-pointer transition-colors duration-200 ${

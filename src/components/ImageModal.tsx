@@ -28,6 +28,9 @@ const ImageModal: React.FC<ImageModalProps> = ({
   return (
     <>
       <figure
+        data-aos="zoom-out"
+        data-aos-delay="300"
+        aos-duration="1000"
         className={`relative w-full h-[55vw] md:h-[52vw] cursor-pointer ${
           top3 ? "lg:flex-1 lg:h-[23vw] xl:h-[22vw]" : "lg:h-[25vw] xl:h-[24vw]"
         }`}
@@ -39,10 +42,8 @@ const ImageModal: React.FC<ImageModalProps> = ({
         tabIndex={0}
         aria-label={`View details about ${title || "certificate"}`}
       >
-        {/* Image/child */}
         {children}
 
-        {/* SEO: Overlay always in DOM (fade/slide animates) */}
         <figcaption
           className={`absolute inset-0 flex flex-col items-center justify-center gap-2 lg:gap-4 bg-black/70 z-10 
             transition-all duration-700 ease-in-out
@@ -52,7 +53,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
             <h2
               className={`text-Green-75/80 text-[5.5vw]/[100%] md:text-[3.8vw]/[100%] lg:text-[2.5vw]/[100%] xl:text-[2.25vw]/[100%] font-bold 
                 transition-all duration-700 ease-in-out delay-100
-                ${showModal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
+                ${
+                  showModal
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-2"
+                }`}
             >
               {company}
             </h2>
@@ -61,7 +66,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
             <h3
               className={`text-white text-[4.5vw]/[100%] md:text-[3.2vw]/[100%] lg:text-[2vw]/[100%] xl:text-[1.75vw]/[100%] font-semibold 
                 transition-all duration-700 ease-in-out delay-200
-                ${showModal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}
+                ${
+                  showModal
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-2"
+                }`}
             >
               {title}
             </h3>
@@ -69,12 +78,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
         </figcaption>
       </figure>
 
-      {/* Fullscreen modal */}
-      {openModal && (
-        <Modal setOpenModal={setOpenModal} src={src} alt={alt} />
-          
-        
-      )}
+      {openModal && <Modal setOpenModal={setOpenModal} src={src} alt={alt} />}
     </>
   );
 };

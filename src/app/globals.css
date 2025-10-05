@@ -4,15 +4,7 @@
     /* Colors */
     /* Absolute Colors */
     --color-White: #ffffff;
-    /* Purple Shades */
-    /* --color-Purple-60: #703bf7;
-    --color-Purple-65: #8254f8;
-    --color-Purple-70: #946cf9;
-    --color-Purple-75: #a685fa;
-    --color-Purple-90: #dbcefd;
-    --color-Purple-95: #ede7fe;
-    --color-Purple-97: #f4f0fe;
-    --color-Purple-99: #fcfcfd; */
+
     /* green Shades  */
     --color-Green-60: #013220;
     --color-Green-65: #014421;
@@ -55,7 +47,7 @@
     /* Absolute Colors */
     --color-White: #322a49;
     /* #1f192f */
-    /* Purple Shades — keep unchanged */
+    /* Green Shades — keep unchanged */
     /* no override needed */
     /* Grey Shades → flipped to light greys */
     --color-Grey-08: #f7f7f8;
@@ -85,30 +77,10 @@
     /* Was #FCFCFD */
 }
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
 
 @theme inline {
-  /* --color-background: var(--background);
-  --color-foreground: var(--foreground); */
-  --font-dancing-script: var(--font-dancing-script);
   --font-nunito: var(--font-nunito);
   --font-comfortaa: var(--font-comfortaa);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  } */
-/* } */
-
-/* body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 

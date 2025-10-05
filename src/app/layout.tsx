@@ -4,11 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
+import AOSProvider from "@/components/AosProvider";
 
-// const Dancing_Script_Font = Dancing_Script({
-//   variable: "--font-dancing-script",
-//   subsets: ["latin"],
-// });
 const ComfortaaFont = Comfortaa({
   variable: "--font-comfortaa",
   subsets: ["latin"],
@@ -17,11 +14,6 @@ const NunitoFont = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
 });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,7 +32,7 @@ export default function RootLayout({
       >
         <Providers>
           <Navbar />
-          {children}
+          <AOSProvider>{children}</AOSProvider>
           <Footer />
         </Providers>
       </body>

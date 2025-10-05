@@ -7,19 +7,26 @@ export interface Project {
   categories: string[];
 }
 
-
 export const ProjectsData: Project[] = [
   {
     title: "PhotoGram",
-    description: "Social media platform for sharing photos and connecting with friends, built with React, TypeScript, Tailwind CSS, and Firebase.",
+    description:
+      "Social media platform for sharing photos and connecting with friends, built with React, TypeScript, Tailwind CSS, and Firebase.",
     imageUrl: "/projects/photogram.webp",
     projectUrl: "https://photo-gram-seven.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/PhotoGram",
-    categories: ["React", "TypeScript", "Tailwind CSS", "Firebase", "Shadcn UI"],
+    categories: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Shadcn UI",
+    ],
   },
   {
     title: "EstateIn",
-    description: "Real estate platform for buying and selling properties, built with group collaboration using React, TypeScript, Tailwind CSS, and Firebase.",
+    description:
+      "Real estate platform for buying and selling properties, built with group collaboration using React, TypeScript, Tailwind CSS, and Firebase.",
     imageUrl: "/projects/estatein.webp",
     projectUrl: "https://estatein-realstate-roan.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/Estatein-realstate",
@@ -27,7 +34,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Tuscany",
-    description: "Tourism website for exploring Tuscany, Italy, built with Next.js, TypeScript, and Tailwind CSS.",
+    description:
+      "Tourism website for exploring Tuscany, Italy, built with Next.js, TypeScript, and Tailwind CSS.",
     imageUrl: "/projects/tourism.webp",
     projectUrl: "https://tourism-phi-one.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/tourism",
@@ -35,7 +43,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "EstateIn | Dashboard",
-    description: "Admin dashboard for managing real estate listings and users, built with React, TypeScript, Tailwind CSS, and Firebase.",
+    description:
+      "Admin dashboard for managing real estate listings and users, built with React, TypeScript, Tailwind CSS, and Firebase.",
     imageUrl: "/projects/estatein-dashboard.webp",
     projectUrl: "https://estatein-dashboard-iota.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/Estatein-Dashboard",
@@ -43,7 +52,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Disney+",
-    description: "Disney+ clone for streaming movies and TV shows, built with React, TypeScript, Tailwind CSS, and The Movie Database.",
+    description:
+      "Disney+ clone for streaming movies and TV shows, built with React, TypeScript, Tailwind CSS, and The Movie Database.",
     imageUrl: "/projects/disney-clone.webp",
     projectUrl: "https://disney-react-tailwindcss.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/react-disney-clone",
@@ -51,7 +61,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Gym",
-    description: "Gym website for showcasing fitness programs and trainers, built with React, TypeScript, and Tailwind CSS.",
+    description:
+      "Gym website for showcasing fitness programs and trainers, built with React, TypeScript, and Tailwind CSS.",
     imageUrl: "/projects/gym.webp",
     projectUrl: "https://gym-khaki-ten.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/gym",
@@ -59,7 +70,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "The Blog",
-    description: "Blogging platform for sharing articles and stories, built with React, TypeScript, Tailwind CSS, and Redux.",
+    description:
+      "Blogging platform for sharing articles and stories, built with React, TypeScript, Tailwind CSS, and Redux.",
     imageUrl: "/projects/the-blog.webp",
     projectUrl: "https://theblog1.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/the-blog",
@@ -67,7 +79,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "e-shop",
-    description: "E-commerce website for buying and selling products, built with React, Tailwind CSS, and Redux.",
+    description:
+      "E-commerce website for buying and selling products, built with React, Tailwind CSS, and Redux.",
     imageUrl: "/projects/ecommerce-shop.webp",
     projectUrl: "https://ecommerce-shop-rho-lac.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/Ecommerce-shop",
@@ -75,7 +88,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Estate",
-    description: "Real estate platform for buying and selling properties, built with group collaboration using React, Tailwind CSS, and Framer motion.",
+    description:
+      "Real estate platform for buying and selling properties, built with group collaboration using React, Tailwind CSS, and Framer motion.",
     imageUrl: "/projects/real-estate.webp",
     projectUrl: "https://real-estate-peach-ten.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/real-estate",
@@ -83,7 +97,8 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Games Listing",
-    description: "A web application that lists various games, built with React, Tailwind CSS, and rawg API.",
+    description:
+      "A web application that lists various games, built with React, Tailwind CSS, and rawg API.",
     imageUrl: "/projects/games-listing.webp",
     projectUrl: "https://games-listing-website-coral.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/games-listing-website",
@@ -91,10 +106,11 @@ export const ProjectsData: Project[] = [
   },
   {
     title: "Flora",
-    description: "Real estate platform for buying and selling properties, built with group collaboration using React and CSS",
+    description:
+      "Real estate platform for buying and selling properties, built with group collaboration using React and CSS",
     imageUrl: "/projects/landing-estate.webp",
     projectUrl: "https://landing-estate.vercel.app/",
     githubUrl: "https://github.com/Younis1996-code/landing-estate",
     categories: ["React", "CSS"],
   },
-]
+];
