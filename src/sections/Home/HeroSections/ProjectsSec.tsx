@@ -3,6 +3,7 @@ import ProjectCard from "@/components/Cards/ProjectCard";
 import SecTitle from "@/components/SecTitle";
 import { Project, ProjectsData } from "@/data/ProjectsData";
 import React from "react";
+import Button from "@/components/Button";
 
 const ProjectsSec = () => {
   return (
@@ -13,6 +14,7 @@ const ProjectsSec = () => {
           <ProjectCard key={index} project={project} top3 index={index} />
         ))}
       </div>
+      <Button value="View All →" link="/projects" className="w-fit mx-auto font-semibold" />
     </Container>
   );
 };
