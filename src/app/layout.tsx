@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${NunitoFont.variable} ${ComfortaaFont.variable} antialiased bg-Grey-08 text-White font-nunito overflow-x-hidden`}
+        className={`${NunitoFont.variable} ${ComfortaaFont.variable} antialiased bg-Grey-08 text-White font-nunito overflow-x-hidden transition-[opacity,background,transform,filter] ease-in-out duration-400`}
       >
         <Providers>
           <Navbar />

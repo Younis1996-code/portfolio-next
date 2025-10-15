@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React, { MouseEvent, useEffect, useState } from "react";
 import ThemeButton from "../ThemeButton";
+import TransitionLink from "../TransitionLink";
 
 type NavItem = {
   name: string;
@@ -19,7 +19,6 @@ const navLinks: NavItem[] = [
 
 const Navbar = () => {
   const pathName = usePathname();
-  const router = useRouter();
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -75,11 +74,10 @@ const Navbar = () => {
         <h1
           className="cursor-pointer font-comfortaa text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium"
           onClick={() => {
-            router.push("/");
             scrollTop();
           }}
         >
-          Younis Issa
+          <TransitionLink href="/">Younis Issa</TransitionLink>
         </h1>
 
         <div className="hidden md:flex gap-6 xl:text-lg items-center absolute left-1/2 transform -translate-x-1/2">
@@ -88,14 +86,14 @@ const Navbar = () => {
               pathName === link.path ||
               (pathName.startsWith(link.path) && link.path !== "/");
             return (
-              <Link
+              <TransitionLink
                 key={link.path}
                 href={link.path}
                 className={navLinkStyles({ isActive })}
                 onClick={scrollTop}
               >
                 {link.name}
-              </Link>
+              </TransitionLink>
             );
           })}
         </div>
@@ -143,7 +141,7 @@ const Navbar = () => {
             const isActive =
               pathName === path || (pathName.startsWith(path) && path !== "/");
             return (
-              <Link
+              <TransitionLink
                 key={path}
                 href={path}
                 onClick={toggleMenu}
@@ -152,7 +150,7 @@ const Navbar = () => {
                 }`}
               >
                 {name}
-              </Link>
+              </TransitionLink>
             );
           })}
           <div className="p-5 w-full">{isMenuOpen && <ThemeButton />}</div>
